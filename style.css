@@ -1,0 +1,113 @@
+/* Mise en page principale */
+.container {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1000px;
+  margin-left: 90px;
+  gap: 40px;
+  padding: 20px;
+  font-family: 'Segoe UI', Arial, sans-serif;
+  color: #333; /* gris foncé */
+}
+
+/* Section formulaire */
+.form-section {
+  margin-top: 80px;
+  flex: 1;
+  margin-right: 40px;
+}
+
+.form-section h2 {
+  margin-bottom: 10px;
+  color: #333;
+}
+
+.form-section p {
+  margin-bottom: 20px;
+  color: #555;
+}
+
+/* Formulaire */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+label {
+  margin-top: 15px;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Champs input avec ligne uniquement en bas */
+input[type="text"],
+input[type="email"] {
+  border: none;
+  border-bottom: 2px solid #ccc; /* ligne grise */
+  padding: 8px;
+  font-size: 1rem;
+  background: transparent;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+  border-bottom: 2px solid #00aaff; /* bleu clair au focus */
+}
+
+/* Checkbox */
+.checkbox {
+  margin: 15px 0;
+  font-size: 0.9rem;
+  color: #333;
+}
+
+/* Bouton "Sign up" */
+button {
+  margin-top: 10px;
+  padding: 8px 20px;
+  border: none;
+  border-radius: 60px; /* forme pilule */
+  background: #00aaff; /* bleu clair */
+  color: #fff; /* texte blanc */
+  font-size: 1rem;
+  cursor: pointer;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ombre subtile */
+  transition: background 0.3s;
+  width: fit-content;
+}
+
+button:hover {
+  background: #0088cc; /* bleu un peu plus foncé au hover */
+}
+
+/* Section illustration */
+.illustration-section {
+  flex: 1;
+}
+
+.illustration-section img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Responsive mobile */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    text-align: left ;
+  }
+  .form-section {
+    margin-right: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.section-image {
+  margin-top: 40px;
+  width: auto ;      /* garde la largeur originale */
+  height: auto ;     /* garde la hauteur originale */
+  max-width: auto ;  /* ne limite pas la largeur */
+  max-height: auto ; /* ne limite pas la hauteur */
+}
