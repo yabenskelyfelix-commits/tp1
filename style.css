@@ -3,17 +3,17 @@
   display: flex;
   justify-content: space-between;
   max-width: 1000px;
-  margin-left: 90px;
+  margin: 40px auto;
   gap: 40px;
   padding: 20px;
   font-family: 'Segoe UI', Arial, sans-serif;
-  color: #333; /* gris foncé */
+  color: #333;
+  align-items: flex-start; /* aligne en haut */
 }
 
 /* Section formulaire */
 .form-section {
-  margin-top: 30px;
-  flex: 1;
+  flex: 1;   
   margin-right: 40px;
 }
 
@@ -39,11 +39,10 @@ label {
   color: #333;
 }
 
-/* Champs input avec ligne uniquement en bas */
 input[type="text"],
 input[type="email"] {
   border: none;
-  border-bottom: 2px solid #ccc; /* ligne grise */
+  border-bottom: 2px solid #ccc;
   padding: 8px;
   font-size: 1rem;
   background: transparent;
@@ -53,59 +52,60 @@ input[type="email"] {
 
 input[type="text"]:focus,
 input[type="email"]:focus {
-  border-bottom: 2px solid #00aaff; /* bleu clair au focus */
+  border-bottom: 2px solid #00aaff;
 }
 
-/* Checkbox */
 .checkbox {
   margin: 15px 0;
   font-size: 0.9rem;
   color: #333;
 }
 
-/* Bouton "Sign up" */
 button {
   margin-top: 10px;
-  padding: 8px 20px;
+  padding: 10px 25px;
   border: none;
-  border-radius: 60px; /* forme pilule */
-  background: #00aaff; /* bleu clair */
-  color: #fff; /* texte blanc */
+  border-radius: 60px;
+  background: #00aaff;
+  color: #fff;
   font-size: 1rem;
   cursor: pointer;
-  box-shadow: 0 4px 8px rgba(0,0,0,0.1); /* ombre subtile */
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
   transition: background 0.3s;
   width: fit-content;
 }
 
 button:hover {
-  background: #0088cc; /* bleu un peu plus foncé au hover */
+  background: #0088cc;
 }
 
 /* Section illustration */
 .illustration-section {
-  flex: 1;
+  flex: 1;   
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .illustration-section img {
-  max-width: 100%;
-  height: auto;
+  max-height: 450px;    
+  width: auto;           
+  object-fit: contain;  
 }
 
 /* Responsive mobile */
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    text-align: left ;
+    text-align: center;
   }
   .form-section {
     margin-right: 0;
     margin-bottom: 30px;
   }
-}
-
-.section-image {
-  margin-top: 20px;
-  width: auto ;      /* garde la largeur originale */
-  height: auto ;     /* garde la hauteur originale */
+  .illustration-section img {
+    max-height: 150px;  
+    width: auto;        
+    object-fit: contain;
+  }
 }
