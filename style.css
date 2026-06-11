@@ -105,12 +105,26 @@ button:hover {
 @media (max-width: 768px) {
   .container {
     flex-direction: column;
-    text-align: center;
+    text-align: left;
   }
   .form-section {
     margin-right: 0;
     margin-bottom: 30px;
   }
+
+.form-section h1 {
+  color: #333;
+  font-size: 2rem; 
+  font-family: "Montserrat", sans-serif;
+}
+
+ .form-section h2 {
+  margin-bottom: 5px;
+  color: #333;
+  font-size: 1.2rem; 
+  font-family: "Montserrat", sans-serif;
+ }
+
   .illustration-section img {
     max-height: 150px;  
     width: auto;        
