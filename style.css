@@ -17,9 +17,17 @@
   margin-right: 40px;
 }
 
+.form-section h1 {
+  color: #333;
+  font-size: 2.4rem; 
+  font-family: "Montserrat", sans-serif;
+}
+
 .form-section h2 {
   margin-bottom: 10px;
   color: #333;
+  font-size: 1.4rem; 
+  font-family: "Montserrat", sans-serif;
 }
 
 .form-section p {
